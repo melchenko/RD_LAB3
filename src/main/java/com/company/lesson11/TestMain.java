@@ -11,10 +11,12 @@ public class TestMain {
 
     static WebDriver driver;
 
+
+
     public static WebDriver getDriver() {
         if (driver == null) {
             System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
-            driver = new ChromeDriver();
+            driver = new FirefoxDriver();
         }
         return driver;
     }
